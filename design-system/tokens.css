@@ -1,0 +1,78 @@
+/* Casa Greda Design Tokens - Ancestral Chilean Clay Aesthetic */
+
+:root {
+  /* Brand Colors - Dark Clay Palette */
+  --cg-bg: #0f0e0d; /* Deep earth black */
+  --cg-fg: #eae7e3; /* Warm off-white */
+  --cg-muted: #b8b2ab; /* Clay dust */
+  --cg-accent: #c0a38b; /* Clay glaze */
+  --cg-surface: #1a1816; /* Elevated surface */
+  --cg-border: #2d2a26; /* Subtle borders */
+
+  /* Semantic Colors */
+  --cg-primary: var(--cg-accent);
+  --cg-primary-fg: var(--cg-bg);
+  --cg-secondary: var(--cg-surface);
+  --cg-secondary-fg: var(--cg-fg);
+  --cg-danger: #d4574a; /* Fired clay red */
+  --cg-success: #7a8471; /* Fern green */
+
+  /* Elevation & Shadows */
+  --cg-elev-1: 0 6px 20px rgba(0, 0, 0, 0.35);
+  --cg-elev-2: 0 12px 30px rgba(0, 0, 0, 0.45);
+  --cg-elev-3: 0 20px 40px rgba(0, 0, 0, 0.55);
+
+  /* Border Radius */
+  --cg-radius: 14px;
+  --cg-radius-sm: 8px;
+  --cg-radius-lg: 22px;
+  --cg-radius-xl: 32px;
+
+  /* Spacing Scale */
+  --cg-space-xs: 0.5rem; /* 8px */
+  --cg-space-sm: 0.75rem; /* 12px */
+  --cg-space-md: 1rem; /* 16px */
+  --cg-space-lg: 1.5rem; /* 24px */
+  --cg-space-xl: 2rem; /* 32px */
+  --cg-space-2xl: 3rem; /* 48px */
+  --cg-space-3xl: 4rem; /* 64px */
+
+  /* Typography Scale */
+  --cg-text-xs: 0.75rem; /* 12px */
+  --cg-text-sm: 0.875rem; /* 14px */
+  --cg-text-base: 1rem; /* 16px */
+  --cg-text-lg: 1.125rem; /* 18px */
+  --cg-text-xl: 1.25rem; /* 20px */
+  --cg-text-2xl: 1.5rem; /* 24px */
+  --cg-text-3xl: 1.875rem; /* 30px */
+  --cg-text-4xl: 2.25rem; /* 36px */
+  --cg-text-5xl: 3rem; /* 48px */
+
+  /* Line Heights */
+  --cg-leading-tight: 1.25;
+  --cg-leading-normal: 1.5;
+  --cg-leading-relaxed: 1.625;
+
+  /* Z-Index Scale */
+  --cg-z-base: 0;
+  --cg-z-dropdown: 1000;
+  --cg-z-sticky: 1020;
+  --cg-z-fixed: 1030;
+  --cg-z-modal: 1040;
+  --cg-z-popover: 1050;
+  --cg-z-tooltip: 1060;
+
+  /* Transitions */
+  --cg-transition-fast: 150ms ease-out;
+  --cg-transition-normal: 250ms ease-out;
+  --cg-transition-slow: 350ms ease-out;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --cg-transition-fast: 0ms;
+    --cg-transition-normal: 0ms;
+    --cg-transition-slow: 0ms;
+  }
+}

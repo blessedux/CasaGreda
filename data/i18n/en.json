@@ -1,0 +1,47 @@
+{
+  "site": {
+    "title": "Casa Greda",
+    "description": "Ancestral Chilean ceramics for your home: plates, bowls and jugs made from dark clay."
+  },
+  "nav": {
+    "rooms": "Rooms",
+    "cart": "Cart",
+    "menu": "Menu"
+  },
+  "hero": {
+    "headline": "Clay pieces, forged by fire.",
+    "subhead": "Ancestral Chilean ceramics for your home: plates, bowls and jugs made from dark clay.",
+    "cta": "Explore Rooms"
+  },
+  "rooms": {
+    "comedor": "Dining Room",
+    "cocina": "Kitchen",
+    "rituales": "Rituals",
+    "regalos": "Gifts"
+  },
+  "product": {
+    "addToCart": "Add to cart",
+    "viewPiece": "View piece",
+    "materials": "Materials",
+    "dimensions": "Dimensions",
+    "weight": "Weight",
+    "care": "Care",
+    "stock": "Available stock",
+    "units": "units",
+    "unitPrice": "Unit price",
+    "total": "Total",
+    "heatSafe": "Oven safe"
+  },
+  "cart": {
+    "empty": "Your cart is empty",
+    "checkout": "Checkout",
+    "shipping": "Shipping",
+    "packagingPromise": "Premium protective packaging. Your piece arrives safely."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "close": "Close",
+    "back": "Back"
+  }
+}

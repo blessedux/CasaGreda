@@ -1,0 +1,55 @@
+.priceBreakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cg-space-sm);
+  padding: var(--cg-space-lg);
+  background-color: rgba(192, 163, 139, 0.05);
+  border: 1px solid rgba(192, 163, 139, 0.2);
+  border-radius: var(--cg-radius);
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priceLabel {
+  font-size: var(--cg-text-sm);
+  color: var(--cg-muted);
+}
+
+.priceValue {
+  font-size: var(--cg-text-sm);
+  color: var(--cg-fg);
+  font-weight: 500;
+}
+
+.savingsLabel {
+  font-size: var(--cg-text-sm);
+  color: var(--cg-success);
+}
+
+.savingsValue {
+  font-size: var(--cg-text-sm);
+  color: var(--cg-success);
+  font-weight: 500;
+}
+
+.totalRow {
+  padding-top: var(--cg-space-sm);
+  border-top: 1px solid rgba(192, 163, 139, 0.3);
+  margin-top: var(--cg-space-sm);
+}
+
+.totalLabel {
+  font-size: var(--cg-text-base);
+  color: var(--cg-fg);
+  font-weight: 600;
+}
+
+.totalValue {
+  font-size: var(--cg-text-xl);
+  color: var(--cg-accent);
+  font-weight: 700;
+}

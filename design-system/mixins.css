@@ -1,0 +1,101 @@
+/* Casa Greda CSS Mixins and Utilities */
+
+/* Elevation Mixins */
+.elevation-1 {
+  box-shadow: var(--cg-elev-1);
+}
+
+.elevation-2 {
+  box-shadow: var(--cg-elev-2);
+}
+
+.elevation-3 {
+  box-shadow: var(--cg-elev-3);
+}
+
+/* Interactive States */
+.interactive {
+  transition: all var(--cg-transition-fast);
+  cursor: pointer;
+}
+
+.interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--cg-elev-2);
+}
+
+.interactive:active {
+  transform: translateY(0);
+  box-shadow: var(--cg-elev-1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .interactive:hover {
+    transform: none;
+  }
+
+  .interactive:active {
+    transform: none;
+  }
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--cg-space-lg);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--cg-space-lg);
+}
+
+/* Surface Styles */
+.surface {
+  background-color: var(--cg-surface);
+  border: 1px solid var(--cg-border);
+  border-radius: var(--cg-radius);
+}
+
+.surface-elevated {
+  background-color: var(--cg-surface);
+  border: 1px solid var(--cg-border);
+  border-radius: var(--cg-radius);
+  box-shadow: var(--cg-elev-1);
+}
+
+/* Text Utilities */
+.text-muted {
+  color: var(--cg-muted);
+}
+
+.text-accent {
+  color: var(--cg-accent);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

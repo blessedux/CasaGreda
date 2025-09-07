@@ -1,0 +1,94 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--cg-z-sticky);
+  background: rgba(15, 14, 13, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--cg-border);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--cg-space-md) var(--cg-space-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--cg-fg);
+}
+
+.logoText {
+  font-size: var(--cg-text-xl);
+  font-weight: 700;
+  color: var(--cg-accent);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--cg-space-lg);
+}
+
+.navLink {
+  color: var(--cg-muted);
+  text-decoration: none;
+  font-size: var(--cg-text-sm);
+  font-weight: 500;
+  padding: var(--cg-space-xs) var(--cg-space-sm);
+  border-radius: var(--cg-radius-sm);
+  transition: color var(--cg-transition-fast);
+}
+
+.navLink:hover {
+  color: var(--cg-fg);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--cg-space-sm);
+}
+
+.cartButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--cg-space-xs);
+}
+
+.cartBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--cg-accent);
+  color: var(--cg-bg);
+  font-size: var(--cg-text-xs);
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .headerContent {
+    padding: var(--cg-space-sm) var(--cg-space-md);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .logoText {
+    font-size: var(--cg-text-lg);
+  }
+}

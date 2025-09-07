@@ -1,0 +1,147 @@
+.mainRoom {
+  min-height: 100vh;
+  background-color: var(--cg-bg);
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  filter: sepia(20%) saturate(80%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 var(--cg-space-lg);
+}
+
+.heroTitle {
+  font-size: var(--cg-text-5xl);
+  font-weight: 600;
+  color: var(--cg-fg);
+  margin-bottom: var(--cg-space-lg);
+  line-height: var(--cg-leading-tight);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.heroSubtitle {
+  font-size: var(--cg-text-xl);
+  color: var(--cg-muted);
+  margin-bottom: var(--cg-space-2xl);
+  line-height: var(--cg-leading-relaxed);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroButton {
+  box-shadow: var(--cg-elev-2);
+}
+
+.roomsSection {
+  padding: var(--cg-space-3xl) 0;
+  background: linear-gradient(180deg, var(--cg-bg) 0%, var(--cg-surface) 100%);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: var(--cg-text-4xl);
+  color: var(--cg-fg);
+  margin-bottom: var(--cg-space-2xl);
+  font-weight: 600;
+}
+
+.roomsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--cg-space-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.storySection {
+  padding: var(--cg-space-3xl) 0;
+  background-color: var(--cg-surface);
+}
+
+.storyContent {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.storyTitle {
+  font-size: var(--cg-text-3xl);
+  color: var(--cg-accent);
+  margin-bottom: var(--cg-space-lg);
+  font-weight: 600;
+}
+
+.storyText {
+  font-size: var(--cg-text-lg);
+  color: var(--cg-muted);
+  line-height: var(--cg-leading-relaxed);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: var(--cg-text-4xl);
+  }
+
+  .heroSubtitle {
+    font-size: var(--cg-text-lg);
+  }
+
+  .roomsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--cg-space-lg);
+  }
+
+  .sectionTitle {
+    font-size: var(--cg-text-3xl);
+  }
+
+  .storyTitle {
+    font-size: var(--cg-text-2xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .heroTitle {
+    font-size: var(--cg-text-3xl);
+  }
+
+  .heroSubtitle {
+    font-size: var(--cg-text-base);
+  }
+
+  .roomsSection,
+  .storySection {
+    padding: var(--cg-space-2xl) 0;
+  }
+}

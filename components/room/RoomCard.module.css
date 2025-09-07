@@ -1,0 +1,163 @@
+.roomCard {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all var(--cg-transition-normal);
+}
+
+.roomCard:focus-visible {
+  outline: 2px solid var(--cg-accent);
+  outline-offset: 2px;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.roomImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all var(--cg-transition-slow);
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.roomImage.loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(15, 14, 13, 0.2) 0%, rgba(15, 14, 13, 0.8) 100%);
+  transition: opacity var(--cg-transition-normal);
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--cg-space-xl);
+  color: var(--cg-fg);
+  z-index: 2;
+}
+
+.title {
+  font-size: var(--cg-text-2xl);
+  font-weight: 600;
+  margin-bottom: var(--cg-space-sm);
+  color: var(--cg-fg);
+}
+
+.description {
+  font-size: var(--cg-text-base);
+  color: var(--cg-muted);
+  line-height: var(--cg-leading-relaxed);
+  margin-bottom: var(--cg-space-lg);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: var(--cg-space-xs);
+  color: var(--cg-accent);
+  font-weight: 500;
+  transition: all var(--cg-transition-fast);
+}
+
+.ctaText {
+  font-size: var(--cg-text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ctaIcon {
+  transition: transform var(--cg-transition-fast);
+}
+
+/* Hover States */
+.roomCard:hover .roomImage,
+.roomCard.hovered .roomImage {
+  transform: scale(1.05);
+}
+
+.roomCard:hover .overlay,
+.roomCard.hovered .overlay {
+  opacity: 0.9;
+}
+
+.roomCard:hover .cta,
+.roomCard.hovered .cta {
+  color: var(--cg-fg);
+  transform: translateX(4px);
+}
+
+.roomCard:hover .ctaIcon,
+.roomCard.hovered .ctaIcon {
+  transform: translateX(2px);
+}
+
+/* Active State */
+.roomCard:active {
+  transform: scale(0.98);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .roomCard,
+  .roomImage,
+  .overlay,
+  .cta,
+  .ctaIcon {
+    transition: none;
+  }
+
+  .roomCard:hover .roomImage,
+  .roomCard.hovered .roomImage {
+    transform: none;
+  }
+
+  .roomCard:hover .cta,
+  .roomCard.hovered .cta {
+    transform: none;
+  }
+
+  .roomCard:hover .ctaIcon,
+  .roomCard.hovered .ctaIcon {
+    transform: none;
+  }
+
+  .roomCard:active {
+    transform: none;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .roomCard {
+    height: 300px;
+  }
+
+  .content {
+    padding: var(--cg-space-lg);
+  }
+
+  .title {
+    font-size: var(--cg-text-xl);
+  }
+
+  .description {
+    font-size: var(--cg-text-sm);
+  }
+}

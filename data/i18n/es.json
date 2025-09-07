@@ -1,0 +1,97 @@
+{
+  "site": {
+    "title": "Casa Greda",
+    "description": "Cerámica ancestral chilena para tu casa: platos, bowls y jarras de greda oscura."
+  },
+  "nav": {
+    "rooms": "Salas",
+    "cart": "Carrito",
+    "menu": "Menú"
+  },
+  "hero": {
+    "headline": "Piezas de greda, forjadas por fuego.",
+    "subhead": "Cerámica ancestral chilena para tu casa: platos, bowls y jarras de greda oscura.",
+    "cta": "Explorar Salas"
+  },
+  "rooms": {
+    "comedor": "Comedor",
+    "cocina": "Cocina",
+    "rituales": "Rituales",
+    "regalos": "Regalos",
+    "backToRooms": "Volver a Salas"
+  },
+  "product": {
+    "addToCart": "Añadir al carrito",
+    "viewPiece": "Ver pieza",
+    "materials": "Materiales",
+    "dimensions": "Dimensiones",
+    "weight": "Peso",
+    "care": "Cuidados",
+    "stock": "Stock disponible",
+    "units": "unidades",
+    "unitPrice": "Precio por unidad",
+    "total": "Total",
+    "heatSafe": "Apta para horno",
+    "microwaveSafe": "Apta para microondas",
+    "dishwasherSafe": "Apta para lavavajillas",
+    "leadTime": "Tiempo de entrega",
+    "days": "días",
+    "artisan": "Artesano",
+    "packSize": "Tamaño del pack",
+    "savings": "Ahorras",
+    "priceBreakdown": "Precios por cantidad",
+    "gallery": "Galería",
+    "specifications": "Especificaciones"
+  },
+  "cart": {
+    "empty": "Tu carrito está vacío",
+    "checkout": "Finalizar compra",
+    "shipping": "Envío",
+    "packagingPromise": "Empaque de protección premium. Tu pieza llega segura.",
+    "items": "artículos",
+    "item": "artículo",
+    "quantity": "Cantidad",
+    "remove": "Eliminar",
+    "update": "Actualizar",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "continueShopping": "Seguir comprando"
+  },
+  "checkout": {
+    "title": "Finalizar Compra",
+    "processing": "Procesando...",
+    "success": "¡Compra exitosa!",
+    "error": "Error en el pago",
+    "paymentMethod": "Método de pago",
+    "shippingAddress": "Dirección de envío",
+    "billingAddress": "Dirección de facturación",
+    "orderSummary": "Resumen del pedido"
+  },
+  "brand": {
+    "story": "Nuestra Historia",
+    "storyText": "Casa Greda nace del respeto por la tradición alfarera chilena. Cada pieza es moldeada a mano por artesanos que mantienen vivas las técnicas ancestrales, creando objetos únicos que conectan tu hogar con la tierra.",
+    "craftmanship": "Artesanía",
+    "tradition": "Tradición",
+    "sustainability": "Sustentabilidad"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "close": "Cerrar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "select": "Seleccionar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "viewAll": "Ver todo",
+    "showMore": "Mostrar más",
+    "showLess": "Mostrar menos"
+  }
+}

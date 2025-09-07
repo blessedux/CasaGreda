@@ -1,0 +1,219 @@
+# Casa Greda Product Catalog
+# Comprehensive YAML-based product data
+
+products:
+  - id: "plato-greda-extendido"
+    slug: "plato-greda-extendido"
+    title:
+      es: "Plato de greda extendido"
+      en: "Extended clay plate"
+    subtitle:
+      es: "Perfecto para presentaciones elegantes"
+      en: "Perfect for elegant presentations"
+    category: "platos"
+    materials:
+      - "Greda oscura chilena"
+      - "Esmalte natural mate"
+      - "Cocción a 1200°C"
+    weight_kg: 2.0
+    dimensions_cm:
+      diameter: 28
+      height: 3
+    heat_safe: true
+    microwave_safe: false
+    dishwasher_safe: false
+    care:
+      - "Apta para horno hasta 200°C"
+      - "Lavar a mano con agua tibia"
+      - "Secar completamente antes de guardar"
+    gallery:
+      - src: "/placeholder.svg?height=400&width=400&text=Plato+Extendido"
+        alt: "Plato de greda extendido vista frontal"
+        focal: "center"
+      - src: "/placeholder.svg?height=400&width=400&text=Plato+Top"
+        alt: "Vista cenital del plato de greda"
+        focal: "top"
+    price_tiers:
+      - qty: 1
+        unit_price: 15000
+        savings: 0
+      - qty: 2
+        unit_price: 14000
+        savings: 2000
+      - qty: 4
+        unit_price: 12500
+        savings: 10000
+      - qty: 8
+        unit_price: 11000
+        savings: 32000
+    stock: 42
+    featured: true
+    room_tags: ["comedor", "regalos"]
+    shipping_notes: "Entrega en RM con empaque protector premium"
+    lead_time_days: 3
+    artisan: "Taller Ancestral Melipilla"
+
+  - id: "bowl-greda-mediano"
+    slug: "bowl-greda-mediano"
+    title:
+      es: "Bowl de greda mediano"
+      en: "Medium clay bowl"
+    subtitle:
+      es: "Ideal para sopas y ensaladas"
+      en: "Ideal for soups and salads"
+    category: "bowls"
+    materials:
+      - "Greda oscura chilena"
+      - "Acabado mate natural"
+    weight_kg: 1.2
+    dimensions_cm:
+      diameter: 18
+      height: 8
+    heat_safe: true
+    microwave_safe: false
+    dishwasher_safe: false
+    care:
+      - "Apta para horno hasta 180°C"
+      - "Lavar a mano preferentemente"
+      - "Evitar cambios bruscos de temperatura"
+    gallery:
+      - src: "/placeholder.svg?height=400&width=400&text=Bowl+Mediano"
+        alt: "Bowl de greda mediano"
+        focal: "center"
+    price_tiers:
+      - qty: 1
+        unit_price: 12000
+        savings: 0
+      - qty: 2
+        unit_price: 11000
+        savings: 2000
+      - qty: 4
+        unit_price: 10000
+        savings: 8000
+    stock: 28
+    room_tags: ["comedor", "cocina"]
+    lead_time_days: 2
+
+  - id: "taza-greda-cafe"
+    slug: "taza-greda-cafe"
+    title:
+      es: "Taza de greda para café"
+      en: "Clay coffee mug"
+    subtitle:
+      es: "Mantiene el calor por más tiempo"
+      en: "Keeps heat longer"
+    category: "tazas"
+    materials:
+      - "Greda oscura chilena"
+      - "Esmalte interior alimentario"
+    weight_kg: 0.4
+    dimensions_cm:
+      diameter: 9
+      height: 10
+      capacity_ml: 250
+    heat_safe: true
+    microwave_safe: true
+    dishwasher_safe: false
+    care:
+      - "Apta para microondas"
+      - "Lavar a mano recomendado"
+      - "Precalentar antes del primer uso"
+    gallery:
+      - src: "/placeholder.svg?height=400&width=400&text=Taza+Café"
+        alt: "Taza de greda para café"
+        focal: "center"
+    price_tiers:
+      - qty: 1
+        unit_price: 8000
+        savings: 0
+      - qty: 2
+        unit_price: 7500
+        savings: 1000
+      - qty: 4
+        unit_price: 7000
+        savings: 4000
+      - qty: 8
+        unit_price: 6500
+        savings: 12000
+    stock: 35
+    featured: true
+    room_tags: ["rituales", "regalos"]
+    lead_time_days: 1
+
+  - id: "jarra-greda-clasica"
+    slug: "jarra-greda-clasica"
+    title:
+      es: "Jarra de greda clásica"
+      en: "Classic clay jug"
+    subtitle:
+      es: "Tradición ancestral para tu mesa"
+      en: "Ancestral tradition for your table"
+    category: "jarras"
+    materials:
+      - "Greda oscura chilena"
+      - "Asa reforzada artesanal"
+      - "Acabado natural sin esmalte"
+    weight_kg: 1.8
+    dimensions_cm:
+      diameter: 15
+      height: 22
+      capacity_ml: 1500
+    heat_safe: false
+    microwave_safe: false
+    dishwasher_safe: false
+    care:
+      - "Solo para líquidos fríos o temperatura ambiente"
+      - "Lavar a mano exclusivamente"
+      - "Curar antes del primer uso"
+    gallery:
+      - src: "/placeholder.svg?height=400&width=400&text=Jarra+Clásica"
+        alt: "Jarra de greda clásica"
+        focal: "center"
+    price_tiers:
+      - qty: 1
+        unit_price: 18000
+        savings: 0
+      - qty: 2
+        unit_price: 17000
+        savings: 2000
+    stock: 15
+    room_tags: ["rituales"]
+    lead_time_days: 5
+    special_notes: "Pieza única, variaciones naturales en el acabado"
+
+  - id: "set-desayuno-completo"
+    slug: "set-desayuno-completo"
+    title:
+      es: "Set desayuno completo"
+      en: "Complete breakfast set"
+    subtitle:
+      es: "Plato, bowl y taza en armonía"
+      en: "Plate, bowl and mug in harmony"
+    category: "sets"
+    materials:
+      - "Greda oscura chilena"
+      - "Esmaltes coordinados"
+    weight_kg: 3.6
+    heat_safe: true
+    microwave_safe: true
+    dishwasher_safe: false
+    care:
+      - "Lavar cada pieza por separado"
+      - "Apta para horno (excepto taza)"
+    gallery:
+      - src: "/placeholder.svg?height=400&width=400&text=Set+Desayuno"
+        alt: "Set completo de desayuno"
+        focal: "center"
+    price_tiers:
+      - qty: 1
+        unit_price: 32000
+        savings: 3000
+    stock: 12
+    featured: true
+    room_tags: ["comedor", "regalos"]
+    lead_time_days: 7
+    includes:
+      - "1 Plato extendido"
+      - "1 Bowl mediano"
+      - "1 Taza café"
+      - "Empaque regalo premium"

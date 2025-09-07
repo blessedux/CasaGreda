@@ -1,0 +1,216 @@
+.productFocus {
+  min-height: 100vh;
+  background-color: var(--cg-bg);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all var(--cg-transition-normal);
+}
+
+.productFocus.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--cg-z-sticky);
+  background: rgba(15, 14, 13, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--cg-border);
+  padding: var(--cg-space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--cg-space-lg);
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid var(--cg-border);
+  border-radius: var(--cg-radius);
+  color: var(--cg-muted);
+  cursor: pointer;
+  transition: all var(--cg-transition-fast);
+}
+
+.backButton:hover {
+  color: var(--cg-fg);
+  background-color: var(--cg-surface);
+  transform: translateY(-1px);
+}
+
+.headerInfo {
+  flex: 1;
+}
+
+.productTitle {
+  font-size: var(--cg-text-3xl);
+  font-weight: 600;
+  color: var(--cg-fg);
+  margin-bottom: var(--cg-space-xs);
+  line-height: var(--cg-leading-tight);
+}
+
+.productSubtitle {
+  font-size: var(--cg-text-lg);
+  color: var(--cg-muted);
+  line-height: var(--cg-leading-normal);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: var(--cg-space-3xl);
+  padding: var(--cg-space-3xl);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.gallerySection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cg-space-2xl);
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cg-space-xl);
+}
+
+.detailSection {
+  padding-bottom: var(--cg-space-lg);
+  border-bottom: 1px solid var(--cg-border);
+}
+
+.detailSection:last-child {
+  border-bottom: none;
+}
+
+.detailTitle {
+  font-size: var(--cg-text-lg);
+  font-weight: 600;
+  color: var(--cg-fg);
+  margin-bottom: var(--cg-space-sm);
+}
+
+.materialsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cg-space-sm);
+}
+
+.material {
+  background-color: var(--cg-surface);
+  color: var(--cg-muted);
+  padding: var(--cg-space-xs) var(--cg-space-sm);
+  border-radius: var(--cg-radius-sm);
+  border: 1px solid var(--cg-border);
+  font-size: var(--cg-text-sm);
+}
+
+.dimensions {
+  display: flex;
+  gap: var(--cg-space-md);
+  font-size: var(--cg-text-base);
+  color: var(--cg-muted);
+}
+
+.weight {
+  font-size: var(--cg-text-base);
+  color: var(--cg-muted);
+  margin: 0;
+}
+
+.careList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--cg-space-xs);
+}
+
+.careItem {
+  font-size: var(--cg-text-sm);
+  color: var(--cg-muted);
+  position: relative;
+  padding-left: var(--cg-space-lg);
+}
+
+.careItem::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--cg-accent);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cg-space-xs);
+  background-color: var(--cg-success);
+  color: var(--cg-bg);
+  padding: var(--cg-space-xs) var(--cg-space-sm);
+  border-radius: var(--cg-radius-sm);
+  font-size: var(--cg-text-sm);
+  font-weight: 500;
+  width: fit-content;
+}
+
+.sidebarSection {
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: var(--cg-space-2xl);
+    padding: var(--cg-space-lg);
+  }
+
+  .sidebarSection {
+    position: static;
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: var(--cg-space-md);
+  }
+
+  .productTitle {
+    font-size: var(--cg-text-2xl);
+  }
+
+  .productSubtitle {
+    font-size: var(--cg-text-base);
+  }
+
+  .content {
+    padding: var(--cg-space-md);
+    gap: var(--cg-space-lg);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .productFocus {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .backButton:hover {
+    transform: none;
+  }
+}
