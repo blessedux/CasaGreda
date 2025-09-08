@@ -3,6 +3,10 @@
 export default function HomePage() {
   const whatsappMessage = encodeURIComponent("¡Quiero más información sobre los platos de greda porfavor!")
   const whatsappUrl = `https://wa.me/+56965519504?text=${whatsappMessage}`
+  
+  // Log deployment info
+  console.log('🚀 Casa Greda - Deployment Update:', new Date().toLocaleString('es-CL'))
+  console.log('📱 WhatsApp Button Status: Active')
 
   return (
     <div style={{
@@ -44,19 +48,6 @@ export default function HomePage() {
         }}>
           Tradición en tu mesa
         </h1>
-        
-        {/* Deployment test - visible change */}
-        <div style={{
-          backgroundColor: '#25D366',
-          color: 'white',
-          padding: '8px 16px',
-          borderRadius: '8px',
-          fontSize: '14px',
-          marginBottom: '20px',
-          display: 'inline-block'
-        }}>
-          ✅ Sitio actualizado - {new Date().toLocaleString('es-CL')}
-        </div>
         
         <h2 style={{
           fontSize: '20px',
