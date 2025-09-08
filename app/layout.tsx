@@ -11,8 +11,8 @@ import SiteHeader from "../components/layout/SiteHeader"
 import "../design-system/globals.css"
 
 export const metadata: Metadata = {
-  title: "Casa Greda - Site Under Construction",
-  description: "Casa Greda - Cerámica Ancestral Chilena. Site under construction.",
+  title: "Casa Greda - Tradición en tu mesa",
+  description: "Casa Greda - Cerámica Ancestral Chilena. Sitio en mantención, vuelva pronto.",
   generator: "Casa Greda",
 }
 
