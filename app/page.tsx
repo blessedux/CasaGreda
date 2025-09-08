@@ -13,8 +13,8 @@ export default function HomePage() {
 
   return (
     <div style={{
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif',
-      backgroundColor: '#0f0e0d',
+      fontFamily: '-apple-system, BlinkMacSystem  Font, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif',
+      backgroundColor: '#ff0000',
       color: '#eae7e3',
       minHeight: '100vh',
       display: 'flex',
