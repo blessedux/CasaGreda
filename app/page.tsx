@@ -1,5 +1,8 @@
 "use client"
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic'
+
 export default function HomePage() {
   const whatsappMessage = encodeURIComponent("¡Quiero más información sobre los platos de greda porfavor!")
   const whatsappUrl = `https://wa.me/+56965519504?text=${whatsappMessage}`
@@ -48,6 +51,18 @@ export default function HomePage() {
         }}>
           🚀 DEPLOYMENT TEST - Tradición en tu mesa 🚀
         </h1>
+        
+        <div style={{
+          backgroundColor: '#25D366',
+          color: 'white',
+          padding: '8px 16px',
+          borderRadius: '8px',
+          fontSize: '14px',
+          marginBottom: '20px',
+          display: 'inline-block'
+        }}>
+          ✅ LIVE UPDATE: {new Date().toLocaleString('es-CL')} - Build: {Math.random().toString(36).substr(2, 9)}
+        </div>
         
         <h2 style={{
           fontSize: '20px',
