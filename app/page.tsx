@@ -46,7 +46,7 @@ export default function HomePage() {
           marginBottom: '16px',
           lineHeight: '1.2'
         }}>
-          Tradición en tu mesa
+          🚀 DEPLOYMENT TEST - Tradición en tu mesa 🚀
         </h1>
         
         <h2 style={{
