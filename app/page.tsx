@@ -6,15 +6,11 @@ export const dynamic = 'force-dynamic'
 export default function HomePage() {
   const whatsappMessage = encodeURIComponent("¡Quiero más información sobre los platos de greda porfavor!")
   const whatsappUrl = `https://wa.me/+56965519504?text=${whatsappMessage}`
-  
-  // Log deployment info
-  console.log('🚀 Casa Greda - Deployment Update:', new Date().toLocaleString('es-CL'))
-  console.log('📱 WhatsApp Button Status: Active')
 
   return (
     <div style={{
       fontFamily: '-apple-system, BlinkMacSystem  Font, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif',
-      backgroundColor: '#ff0000',
+      backgroundColor: '#0f0e0d',
       color: '#eae7e3',
       minHeight: '100vh',
       display: 'flex',
@@ -49,20 +45,8 @@ export default function HomePage() {
           marginBottom: '16px',
           lineHeight: '1.2'
         }}>
-          🚀 DEPLOYMENT TEST - Tradición en tu mesa 🚀
+          Tradición en tu mesa
         </h1>
-        
-        <div style={{
-          backgroundColor: '#25D366',
-          color: 'white',
-          padding: '8px 16px',
-          borderRadius: '8px',
-          fontSize: '14px',
-          marginBottom: '20px',
-          display: 'inline-block'
-        }}>
-          ✅ LIVE UPDATE: {new Date().toLocaleString('es-CL')} - Build: {Math.random().toString(36).substr(2, 9)}
-        </div>
         
         <h2 style={{
           fontSize: '20px',
